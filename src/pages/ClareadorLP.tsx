@@ -248,14 +248,7 @@ export default function ClareadorLP() {
               ⚠️ Restam apenas 15 unidades do Lote Atual
             </div>
             
-            <div className="max-w-2xl mx-auto mt-6 mb-2 p-5 bg-[#D4A373]/10 border border-[#D4A373]/20 rounded-2xl">
-              <p className="text-[#2C362B] font-medium text-lg italic mb-2">
-                Qual o valor da sua autoestima de volta?
-              </p>
-              <p className="text-[#6B7068] font-light text-base leading-relaxed">
-                Este investimento supera qualquer procedimento caro que só traz rebote. É a paz de se amar novamente. <strong>Pague apenas quando o entregador deixar o produto em suas mãos.</strong>
-              </p>
-            </div>
+
           </div>
 
           <div className="flex flex-col md:flex-row gap-8 lg:gap-12 justify-center items-stretch mt-12">
@@ -317,10 +310,7 @@ export default function ClareadorLP() {
                   <span className="block text-[#D4A373]/70 text-[10px] uppercase tracking-widest mt-2">Você economiza R$ 46,70</span>
                 </div>
                 
-                <div className="bg-[#D4A373]/10 border border-[#D4A373]/30 rounded-xl p-3.5 mb-6 text-center shadow-[inset_0_2px_10px_rgba(0,0,0,0.2)]">
-                  <p className="text-[#D4A373] text-[11px] font-bold uppercase tracking-widest mb-1">Recomendação dos Especialistas</p>
-                  <p className="text-[#EAE6DF] text-[11px] font-light leading-relaxed">O tratamento de 3 meses bloqueia a melanina para que a mancha <strong>nunca mais volte</strong>. Por isso 9 a cada 10 clientes escolhem este kit.</p>
-                </div>
+
 
                 <ul className="space-y-4 mb-8 pt-2 flex-1 border-t border-white/10">
                   <li className="flex items-start gap-3 text-base text-[#EAE6DF] font-light"><CheckCircle2 className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" /> <span><strong>Remoção definitiva até das manchas mais crônicas</strong></span></li>
