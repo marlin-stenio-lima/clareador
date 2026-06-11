@@ -49,7 +49,7 @@ export default function ClareadorLP() {
             </p>
             
             <div className="flex flex-col items-center md:items-start gap-1 mb-4 w-full">
-              <a href="#oferta" className="w-full md:w-auto group relative inline-flex items-center justify-center gap-2 bg-[#2C362B] text-white px-8 md:px-12 py-5 rounded-full font-medium overflow-hidden transition-all hover:scale-[1.02] hover:shadow-[0_15px_40px_-10px_rgba(44,54,43,0.5)] shadow-lg animate-pulse" style={{ animationDuration: '2.5s' }}>
+              <a href="#oferta" className="w-full md:w-auto group relative inline-flex items-center justify-center gap-2 bg-[#2C362B] text-white px-8 md:px-12 py-5 rounded-full font-medium overflow-hidden transition-all hover:scale-[1.02] hover:shadow-[0_15px_40px_-10px_rgba(44,54,43,0.5)] shadow-lg">
                 <span className="relative z-10 flex items-center gap-2 tracking-widest uppercase text-[13px] md:text-[15px] font-black text-center">
                   QUERO CLAREAR MINHAS MANCHAS <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                 </span>
@@ -259,7 +259,7 @@ export default function ClareadorLP() {
                   <li className="flex items-start gap-3 text-sm text-[#4A4C48] font-light"><CheckCircle2 className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" /> <span><strong>Pague apenas ao entregador</strong></span></li>
                 </ul>
                 <div className="w-full flex flex-col items-center">
-                  <a href={link1Unidade} onClick={() => handleInitiateCheckout('1 Unidade Amazolé', 97.90)} className="w-full flex items-center justify-center gap-2 bg-[#FDFBF7] border-2 border-[#EAE6DF] text-[#2C362B] hover:bg-[#2C362B] hover:text-white hover:border-[#2C362B] py-5 rounded-2xl font-black tracking-widest uppercase text-[13px] transition-all shadow-md group">
+                  <a href={link1Unidade} onClick={() => handleInitiateCheckout('1 Unidade Amazolé', 97.90)} className="w-full flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white py-5 rounded-2xl font-black tracking-widest uppercase text-[13px] transition-all shadow-[0_10px_20px_rgba(34,197,94,0.3)] group">
                     Pedir 1 Unidade <ChevronRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                   </a>
                   <div className="flex items-center justify-center gap-1.5 text-[10px] text-[#6B7068] font-bold mt-3 text-center">
@@ -306,7 +306,7 @@ export default function ClareadorLP() {
                   <li className="flex items-start gap-3 text-sm text-[#EAE6DF] font-light"><CheckCircle2 className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" /> <span><strong>Pague apenas ao entregador na sua porta</strong></span></li>
                 </ul>
                 <div className="w-full flex flex-col items-center">
-                  <a href={link3Unidades} onClick={() => handleInitiateCheckout('Kit 3 Unidades Amazolé', 247.00)} className="w-full flex items-center justify-center gap-2 bg-[#D4A373] hover:bg-[#c09162] text-[#2C362B] py-5 rounded-2xl font-black tracking-widest uppercase text-[14px] transition-all hover:scale-[1.02] shadow-[0_15px_30px_rgba(212,163,115,0.5)] relative overflow-hidden group/btn animate-pulse" style={{ animationDuration: '2s' }}>
+                  <a href={link3Unidades} onClick={() => handleInitiateCheckout('Kit 3 Unidades Amazolé', 247.00)} className="w-full flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white py-5 rounded-2xl font-black tracking-widest uppercase text-[14px] transition-all hover:scale-[1.02] shadow-[0_15px_30px_rgba(34,197,94,0.5)] relative overflow-hidden group/btn">
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover/btn:animate-[shimmer_1.5s_infinite]"></div>
                     <span className="flex items-center gap-2 relative z-10">Agendar Minha Entrega <ChevronRight className="w-6 h-6 transition-transform group-hover/btn:translate-x-1" /></span>
                   </a>
@@ -368,7 +368,7 @@ export default function ClareadorLP() {
 
       {/* Botão Flutuante Fixo na Base (Sticky Bottom CTA) */}
       <div className="fixed bottom-0 left-0 right-0 z-40 bg-white/90 backdrop-blur-md border-t border-[#EAE6DF] p-3 md:p-4 shadow-[0_-10px_30px_rgba(0,0,0,0.1)] flex justify-center items-center">
-        <a href="#oferta" className="w-full max-w-lg group relative inline-flex items-center justify-center gap-2 bg-green-500 text-white px-6 py-3.5 md:py-4 rounded-full font-bold overflow-hidden transition-all hover:scale-[1.02] shadow-[0_10px_20px_rgba(34,197,94,0.3)] animate-pulse" style={{ animationDuration: '2.5s' }}>
+        <a href="#oferta" className="w-full max-w-lg group relative inline-flex items-center justify-center gap-2 bg-green-500 text-white px-6 py-3.5 md:py-4 rounded-full font-bold overflow-hidden transition-all hover:scale-[1.02] shadow-[0_10px_20px_rgba(34,197,94,0.3)]">
           <span className="relative z-10 flex items-center gap-2 tracking-widest uppercase text-[13px] md:text-[15px] font-black text-center">
             ACABAR COM AS MANCHAS AGORA
           </span>
