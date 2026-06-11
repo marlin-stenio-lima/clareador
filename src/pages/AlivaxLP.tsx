@@ -104,7 +104,7 @@ export default function AlivaxLP() {
             {/* Texto Emocional e Ingredientes */}
             <div className="space-y-8">
               <p className="text-[#6B7068] text-lg font-light leading-relaxed">
-                Sabemos o quão frustrante é gastar fortunas com remédios de farmácia que só mascaram a dor. Eles atacam seu estômago e, quando o efeito passa... <strong>a dor articular volta ainda pior.</strong>
+                Sabemos o quão frustrante é gastar fortunas com anti-inflamatórios fortes que só mascaram a dor e destroem seu estômago. O medo de uma cirurgia ou de perder a autonomia para subir uma escada e brincar com os netos é real. E quando o efeito do remédio passa... <strong>a pontada no joelho volta ainda pior.</strong>
               </p>
               
               <div className="bg-white p-8 rounded-3xl shadow-sm border border-[#EAE6DF]">
@@ -115,15 +115,15 @@ export default function AlivaxLP() {
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" />
-                    <span className="text-[#4A4C48] text-[15px]"><strong className="text-[#2C362B]">Colágeno Tipo II (UC-II):</strong> Desliga o ataque autoimune contra suas próprias articulações e reconstrói a cartilagem.</span>
+                    <span className="text-[#4A4C48] text-[15px]"><strong className="text-[#2C362B]">Colágeno Tipo 2 (UC-II):</strong> Protege e reconstrói as cartilagens desgastadas, acabando com o doloroso atrito de "osso com osso".</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" />
-                    <span className="text-[#4A4C48] text-[15px]"><strong className="text-[#2C362B]">Curcumina BCM-95:</strong> O anti-inflamatório natural mais potente do mundo. Desincha os joelhos e tira a rigidez.</span>
+                    <span className="text-[#4A4C48] text-[15px]"><strong className="text-[#2C362B]">Curcumina em Gotas:</strong> O anti-inflamatório natural mais potente do mundo. Desincha os joelhos e tira a rigidez matinal.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" />
-                    <span className="text-[#4A4C48] text-[15px]"><strong className="text-[#2C362B]">Ácido Hialurônico:</strong> Lubrifica as juntas, agindo como um "óleo" para acabar com os estalos e a dor ao levantar.</span>
+                    <span className="text-[#4A4C48] text-[15px]"><strong className="text-[#2C362B]">Magnésio + Glucosamina:</strong> Relaxa a musculatura, evita cãibras e atua como um lubrificante poderoso para devolver a sua mobilidade.</span>
                   </li>
                 </ul>
               </div>
