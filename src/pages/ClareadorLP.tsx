@@ -39,9 +39,9 @@ export default function ClareadorLP() {
               <Sparkles className="w-3.5 h-3.5" /> Fórmula 100% Natural
             </div>
             
-            <h1 className="text-4xl md:text-6xl font-serif font-medium leading-[1.15] mb-6 text-[#2C362B] tracking-tight">
-              O único que apaga <br className="hidden md:block" />
-              <span className="italic font-light text-[#D4A373]">manchas escuras</span> sem efeito rebote.
+            <h1 className="text-4xl md:text-[3.5rem] font-serif font-medium leading-[1.15] mb-6 text-[#2C362B] tracking-tight">
+              Você vai continuar sentindo <br className="hidden md:block" />
+              <span className="italic font-light text-[#D4A373]">vergonha do seu corpo</span> até quando?
             </h1>
             
             <p className="text-lg md:text-xl text-[#6B7068] font-light mb-8 leading-relaxed max-w-xl">
@@ -220,7 +220,15 @@ export default function ClareadorLP() {
             <div className="inline-flex items-center gap-2 bg-red-50 text-red-600 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest border border-red-100 mb-4 animate-pulse">
               ⚠️ Restam apenas 15 unidades do Lote Atual
             </div>
-            <p className="text-[#6B7068] font-light max-w-xl mx-auto text-lg mt-2">Você não corre nenhum risco: <strong>nós só recebemos quando o entregador deixar o produto nas suas mãos.</strong></p>
+            
+            <div className="max-w-2xl mx-auto mt-6 mb-2 p-5 bg-[#D4A373]/10 border border-[#D4A373]/20 rounded-2xl">
+              <p className="text-[#2C362B] font-medium text-lg italic mb-2">
+                Qual é o valor de nunca mais ter vergonha de colocar um biquíni ou de acender a luz na intimidade?
+              </p>
+              <p className="text-[#6B7068] font-light text-sm leading-relaxed">
+                O valor que você vai investir hoje para ter a sua liberdade e autoestima de volta não paga nem uma única sessão de laser ou peeling na dermatologista (que só faria a mancha voltar pior). É um investimento insignificante comparado à paz de olhar no espelho e se amar de novo. E o melhor: <strong>Você só paga quando o entregador deixar o produto nas suas mãos.</strong>
+              </p>
+            </div>
           </div>
 
           <div className="flex flex-col md:flex-row gap-8 lg:gap-12 justify-center items-stretch mt-12">
