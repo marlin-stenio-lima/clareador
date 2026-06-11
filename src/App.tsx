@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import Affiliates from './pages/Affiliates';
 import LogzzLP from './pages/LogzzLP';
 import ClareadorLP from './pages/ClareadorLP';
+import AlivaxLP from './pages/AlivaxLP';
 
 function AdminDashboard() {
   return <div className="p-8"><h1 className="text-2xl font-bold">Admin Dashboard</h1></div>;
@@ -21,6 +22,7 @@ function App() {
         <Route path="/afiliados" element={<Affiliates />} />
         <Route path="/logzz" element={<LogzzLP />} />
         <Route path="/clareador" element={<ClareadorLP />} />
+        <Route path="/alivax" element={<AlivaxLP />} />
         <Route path="/app/admin" element={<AdminDashboard />} />
         <Route path="/app/dashboard" element={<AffiliateDashboard />} />
       </Routes>
