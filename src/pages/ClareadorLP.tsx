@@ -48,12 +48,16 @@ export default function ClareadorLP() {
               Chega de ter vergonha do seu próprio corpo! O tratamento número 1 para clareamento intensivo de <strong>Rosto (Melasma), Axilas, Virilhas, Foliculite e Bumbum.</strong> Aprovado por mais de 12.450 mulheres.
             </p>
             
-            <div className="flex flex-col md:flex-row items-center gap-4 mb-4">
-              <a href="#oferta" className="w-full md:w-auto group relative inline-flex flex-col items-center justify-center gap-1 bg-[#2C362B] text-white px-6 md:px-10 py-4 rounded-full font-medium overflow-hidden transition-all hover:scale-[1.02] hover:shadow-[0_15px_40px_-10px_rgba(44,54,43,0.5)]">
-                <span className="relative z-10 flex items-center gap-2 tracking-widest uppercase text-[12px] md:text-[13px] font-bold text-center">QUERO CLAREAR MINHAS MANCHAS <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" /></span>
-                <span className="relative z-10 text-[9px] text-white/70 tracking-normal normal-case font-light text-center">E pagar com segurança apenas na entrega</span>
+            <div className="flex flex-col items-center md:items-start gap-1 mb-4 w-full">
+              <a href="#oferta" className="w-full md:w-auto group relative inline-flex items-center justify-center gap-2 bg-[#2C362B] text-white px-8 md:px-12 py-5 rounded-full font-medium overflow-hidden transition-all hover:scale-[1.02] hover:shadow-[0_15px_40px_-10px_rgba(44,54,43,0.5)] shadow-lg animate-pulse" style={{ animationDuration: '2.5s' }}>
+                <span className="relative z-10 flex items-center gap-2 tracking-widest uppercase text-[13px] md:text-[15px] font-black text-center">
+                  QUERO CLAREAR MINHAS MANCHAS <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-[#2C362B] to-[#3f4d3e] opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </a>
+              <div className="flex items-center justify-center gap-1.5 text-[11px] md:text-xs text-[#6B7068] font-semibold mt-2 mx-auto md:mx-0 text-center w-full md:w-auto">
+                <ShieldCheck className="w-4 h-4 text-green-600" /> Risco Zero: Pague apenas quando o entregador chegar na sua casa.
+              </div>
             </div>
             
             <div className="inline-flex items-center gap-3 bg-[#D4A373]/10 border border-[#D4A373]/30 px-5 py-3 rounded-2xl text-[#2C362B] text-xs font-bold uppercase tracking-wider mx-auto md:mx-0">
@@ -254,10 +258,14 @@ export default function ClareadorLP() {
                   <li className="flex items-start gap-3 text-sm text-[#4A4C48] font-light"><CheckCircle2 className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" /> <span>Nutrição profunda (Rende 1 Mês)</span></li>
                   <li className="flex items-start gap-3 text-sm text-[#4A4C48] font-light"><CheckCircle2 className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" /> <span><strong>Pague apenas ao entregador</strong></span></li>
                 </ul>
-                <a href={link1Unidade} onClick={() => handleInitiateCheckout('1 Unidade Amazolé', 97.90)} className="w-full flex flex-col items-center justify-center gap-1 bg-[#FDFBF7] border border-[#EAE6DF] text-[#2C362B] hover:bg-[#2C362B] hover:text-white hover:border-[#2C362B] py-4 rounded-2xl font-bold tracking-widest uppercase text-[11px] transition-all shadow-sm">
-                  <span className="flex items-center gap-2">Pedir 1 Unidade <ChevronRight className="w-4 h-4" /></span>
-                  <span className="text-[9px] opacity-70 normal-case font-medium">E pagar apenas na entrega</span>
-                </a>
+                <div className="w-full flex flex-col items-center">
+                  <a href={link1Unidade} onClick={() => handleInitiateCheckout('1 Unidade Amazolé', 97.90)} className="w-full flex items-center justify-center gap-2 bg-[#FDFBF7] border-2 border-[#EAE6DF] text-[#2C362B] hover:bg-[#2C362B] hover:text-white hover:border-[#2C362B] py-5 rounded-2xl font-black tracking-widest uppercase text-[13px] transition-all shadow-md group">
+                    Pedir 1 Unidade <ChevronRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                  </a>
+                  <div className="flex items-center justify-center gap-1.5 text-[10px] text-[#6B7068] font-bold mt-3 text-center">
+                    <ShieldCheck className="w-3.5 h-3.5 text-green-600" /> Pague apenas quando receber o produto em mãos
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -297,11 +305,15 @@ export default function ClareadorLP() {
                   <li className="flex items-start gap-3 text-sm text-[#EAE6DF] font-light"><CheckCircle2 className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" /> <span>Bloqueia o Efeito Rebote (Rende 3 Meses)</span></li>
                   <li className="flex items-start gap-3 text-sm text-[#EAE6DF] font-light"><CheckCircle2 className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" /> <span><strong>Pague apenas ao entregador na sua porta</strong></span></li>
                 </ul>
-                <a href={link3Unidades} onClick={() => handleInitiateCheckout('Kit 3 Unidades Amazolé', 247.00)} className="w-full flex flex-col items-center justify-center gap-1 bg-[#D4A373] hover:bg-[#c09162] text-[#2C362B] py-5 rounded-2xl font-bold tracking-widest uppercase text-[12px] transition-all hover:scale-[1.02] shadow-[0_10px_30px_rgba(212,163,115,0.4)] relative overflow-hidden group/btn">
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover/btn:animate-[shimmer_1.5s_infinite]"></div>
-                  <span className="flex items-center gap-2 relative z-10">Agendar Minha Entrega <ChevronRight className="w-5 h-5" /></span>
-                  <span className="text-[10px] opacity-80 normal-case font-medium relative z-10">Pague apenas quando receber o produto</span>
-                </a>
+                <div className="w-full flex flex-col items-center">
+                  <a href={link3Unidades} onClick={() => handleInitiateCheckout('Kit 3 Unidades Amazolé', 247.00)} className="w-full flex items-center justify-center gap-2 bg-[#D4A373] hover:bg-[#c09162] text-[#2C362B] py-5 rounded-2xl font-black tracking-widest uppercase text-[14px] transition-all hover:scale-[1.02] shadow-[0_15px_30px_rgba(212,163,115,0.5)] relative overflow-hidden group/btn animate-pulse" style={{ animationDuration: '2s' }}>
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover/btn:animate-[shimmer_1.5s_infinite]"></div>
+                    <span className="flex items-center gap-2 relative z-10">Agendar Minha Entrega <ChevronRight className="w-6 h-6 transition-transform group-hover/btn:translate-x-1" /></span>
+                  </a>
+                  <div className="flex items-center justify-center gap-1.5 text-[11px] text-[#EAE6DF] font-bold mt-3 text-center">
+                    <ShieldCheck className="w-4 h-4 text-green-400" /> Pague apenas quando o entregador chegar na sua casa
+                  </div>
+                </div>
               </div>
             </div>
 
