@@ -1,4 +1,4 @@
-import { ShieldCheck, Truck, ArrowRight, CheckCircle2, Sparkles, Leaf, Star, ChevronRight, Droplets, Shield, Heart, HelpCircle, Lock } from 'lucide-react';
+import { ShieldCheck, Truck, ArrowRight, CheckCircle2, Sparkles, Leaf, ChevronRight, Droplets, Shield, Heart, HelpCircle, Lock } from 'lucide-react';
 
 export default function ClareadorLP() {
   const queryParams = typeof window !== 'undefined' ? window.location.search : '';

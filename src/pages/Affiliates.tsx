@@ -1,4 +1,4 @@
-import { Play, CheckCircle2, ChevronRight, TrendingUp, Shield, Zap, DollarSign, Users } from 'lucide-react';
+import { Play, CheckCircle2, ChevronRight, TrendingUp, Shield, Zap, DollarSign, Lock } from 'lucide-react';
 
 export default function Affiliates() {
   return (
