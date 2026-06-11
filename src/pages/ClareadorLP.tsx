@@ -1,8 +1,21 @@
 import { ShieldCheck, Truck, ArrowRight, CheckCircle2, Sparkles, Leaf, Star, ChevronRight, Droplets, Shield, Heart, HelpCircle, Lock } from 'lucide-react';
 
 export default function ClareadorLP() {
-  const link1Unidade = "https://entrega.logzz.com.br/pay/rxods-1-unidade";
-  const link3Unidades = "https://entrega.logzz.com.br/pay/ortvw-3-unidades";
+  const queryParams = typeof window !== 'undefined' ? window.location.search : '';
+  const link1Unidade = `https://entrega.logzz.com.br/pay/rxods-1-unidade${queryParams}`;
+  const link3Unidades = `https://entrega.logzz.com.br/pay/ortvw-3-unidades${queryParams}`;
+
+  const handleInitiateCheckout = (productName: string, value: number) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    if (typeof window !== 'undefined' && typeof (window as any).fbq === 'function') {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      (window as any).fbq('track', 'InitiateCheckout', {
+        content_name: productName,
+        currency: 'BRL',
+        value: value,
+      });
+    }
+  };
 
   return (
     <div className="min-h-screen bg-[#FDFBF7] font-sans text-slate-800 selection:bg-[#D4A373]/20">
@@ -212,7 +225,7 @@ export default function ClareadorLP() {
                   <li className="flex items-start gap-3 text-sm text-[#4A4C48] font-light"><CheckCircle2 className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" /> <span>Nutrição profunda (Rende 1 Mês)</span></li>
                   <li className="flex items-start gap-3 text-sm text-[#4A4C48] font-light"><CheckCircle2 className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" /> <span><strong>Pague apenas ao entregador</strong></span></li>
                 </ul>
-                <a href={link1Unidade} className="w-full flex flex-col items-center justify-center gap-1 bg-[#FDFBF7] border border-[#EAE6DF] text-[#2C362B] hover:bg-[#2C362B] hover:text-white hover:border-[#2C362B] py-4 rounded-2xl font-bold tracking-widest uppercase text-[11px] transition-all shadow-sm">
+                <a href={link1Unidade} onClick={() => handleInitiateCheckout('1 Unidade Amazolé', 97.90)} className="w-full flex flex-col items-center justify-center gap-1 bg-[#FDFBF7] border border-[#EAE6DF] text-[#2C362B] hover:bg-[#2C362B] hover:text-white hover:border-[#2C362B] py-4 rounded-2xl font-bold tracking-widest uppercase text-[11px] transition-all shadow-sm">
                   <span className="flex items-center gap-2">Pedir 1 Unidade <ChevronRight className="w-4 h-4" /></span>
                   <span className="text-[9px] opacity-70 normal-case font-medium">E pagar apenas na entrega</span>
                 </a>
@@ -249,7 +262,7 @@ export default function ClareadorLP() {
                   <li className="flex items-start gap-3 text-sm text-[#EAE6DF] font-light"><CheckCircle2 className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" /> <span>Tratamento intensivo (Rende 3 Meses)</span></li>
                   <li className="flex items-start gap-3 text-sm text-[#EAE6DF] font-light"><CheckCircle2 className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" /> <span><strong>Pague apenas ao entregador</strong></span></li>
                 </ul>
-                <a href={link3Unidades} className="w-full flex flex-col items-center justify-center gap-1 bg-[#D4A373] hover:bg-[#c09162] text-[#2C362B] py-5 rounded-2xl font-bold tracking-widest uppercase text-[12px] transition-all hover:scale-[1.02] shadow-[0_10px_30px_rgba(212,163,115,0.4)] relative overflow-hidden group/btn">
+                <a href={link3Unidades} onClick={() => handleInitiateCheckout('Kit 3 Unidades Amazolé', 247.00)} className="w-full flex flex-col items-center justify-center gap-1 bg-[#D4A373] hover:bg-[#c09162] text-[#2C362B] py-5 rounded-2xl font-bold tracking-widest uppercase text-[12px] transition-all hover:scale-[1.02] shadow-[0_10px_30px_rgba(212,163,115,0.4)] relative overflow-hidden group/btn">
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover/btn:animate-[shimmer_1.5s_infinite]"></div>
                   <span className="flex items-center gap-2 relative z-10">Agendar Minha Entrega <ChevronRight className="w-5 h-5" /></span>
                   <span className="text-[10px] opacity-80 normal-case font-medium relative z-10">Pague apenas quando receber o produto</span>
