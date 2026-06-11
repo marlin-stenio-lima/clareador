@@ -84,14 +84,23 @@ export default function ClareadorLP() {
             {/* Texto Emocional e Ingredientes */}
             <div className="space-y-8">
               <div className="prose prose-lg text-[#6B7068] font-light leading-relaxed">
+                <p className="mb-4 text-2xl font-serif text-[#2C362B]">
+                  Eu sei exatamente como você se sente...
+                </p>
                 <p className="mb-4">
                   Responda com sinceridade: <strong>Há quanto tempo você tem vergonha de olhar no espelho ou prefere apagar a luz na hora da intimidade porque a sua pele está manchada?</strong>
                 </p>
                 <p className="mb-4">
-                  Nós sabemos exatamente o que é abrir mão de usar aquele biquíni lindo na praia, ou esconder os braços numa regata porque as axilas e a virilha estão escurecidas. E sabemos do seu trauma e frustração com ácidos de farmácia que ardem, descamam e, no final... <strong>só fazem a mancha voltar o dobro do tamanho (O temido Efeito Rebote).</strong>
+                  Nós sabemos a dor que é abrir mão de usar aquele biquíni lindo na praia, ou derreter de calor no verão escondendo os braços numa blusa longa só para ninguém ver suas axilas escurecidas. Sabemos o desespero de ter que acordar mais cedo só para passar camadas grossas de corretivo e tentar disfarçar o melasma do rosto antes do marido acordar.
                 </p>
-                <p className="text-[#2C362B] font-medium text-[19px] border-l-4 border-[#D4A373] pl-5 italic">
-                  Você não precisa mais passar por essa dor e esconder o seu próprio corpo. Você merece recuperar a sua feminilidade, sua segurança e a sua liberdade de vestir o que quiser.
+                <p className="mb-4">
+                  É frustrante ver as outras mulheres com a pele lisinha e uniforme, enquanto você se sente refém do próprio corpo, com a autoestima destruída. Você já tentou receitas caseiras que queimaram a sua pele. Já gastou rios de dinheiro com ácidos de farmácia que ardem, descamam e, no final... <strong>só fazem a mancha voltar o dobro do tamanho (O temido Efeito Rebote).</strong>
+                </p>
+                <p className="mb-6">
+                  Até quando você vai adiar a sua felicidade? Até quando alguém vai te abraçar ou te tocar e você vai se encolher de vergonha das suas manchas na virilha e no bumbum?
+                </p>
+                <p className="text-[#2C362B] font-medium text-[19px] border-l-4 border-[#D4A373] pl-5 italic bg-[#D4A373]/5 p-4 rounded-r-xl">
+                  Você não precisa mais passar por essa humilhação calada. A culpa das manchas não é sua. E agora, você finalmente encontrou a chave para recuperar a sua feminilidade, sua segurança e a liberdade de vestir o que quiser sem medo de ser julgada.
                 </p>
               </div>
               
