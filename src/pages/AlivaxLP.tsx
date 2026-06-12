@@ -41,17 +41,17 @@ export default function AlivaxLP() {
             </div>
             
             <h1 className="text-4xl md:text-6xl font-serif text-[#0F172A] mb-6 leading-[1.1] tracking-tight">
-              Desligue a 'Chave da Dor' nas suas articulações e <span className="relative inline-block"><span className="relative z-10 text-[#EA580C] italic">Volte a se Movimentar</span><div className="absolute bottom-2 left-0 w-full h-3 bg-[#EA580C]/20 -rotate-1"></div></span>
+              Se você ignorar essa "pontada" hoje, se prepare para a <span className="relative inline-block"><span className="relative z-10 text-red-600 italic">cadeira de rodas.</span><div className="absolute bottom-2 left-0 w-full h-3 bg-red-600/20 -rotate-1"></div></span>
             </h1>
             
             <p className="text-lg md:text-xl text-[#6B7068] font-light mb-8 leading-relaxed max-w-xl mx-auto md:mx-0">
-              O tratamento pioneiro em gotas com <strong className="text-[#0F172A] font-bold">Colágeno Tipo 2 e Curcumina</strong> que age direto na raiz da inflamação. Sem injeções ou remédios fortes.
+              A dor que você sente é um <strong className="text-red-600">ALARME DE EMERGÊNCIA</strong> do seu corpo. Descubra a fórmula sublingual que age na raiz da inflamação antes que a única saída seja uma cirurgia de R$ 30.000,00.
             </p>
             
             <div className="flex flex-col items-center md:items-start gap-1 mb-4 w-full">
               <a href="#oferta" className="w-full md:w-auto group relative inline-flex items-center justify-center gap-2 bg-[#0F172A] text-white px-8 md:px-12 py-5 rounded-full font-medium overflow-hidden transition-all hover:scale-[1.02] hover:shadow-[0_15px_40px_-10px_rgba(15,23,42,0.5)] shadow-lg">
                 <span className="relative z-10 flex items-center gap-2 tracking-widest uppercase text-[15px] font-black text-center">
-                  QUERO ALÍVIO AGORA <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                  SALVAR MINHA CARTILAGEM AGORA <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-[#0F172A] to-[#1E3A8A] opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </a>
@@ -81,70 +81,53 @@ export default function AlivaxLP() {
       </header>
 
       {/* Seção Emocional & Fórmula */}
+      {/* Seção Emocional (Interesse) */}
       <section className="py-20 bg-[#FDFBF7]">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-[10px] md:text-xs font-bold tracking-[0.3em] uppercase text-red-600 mb-4 animate-pulse">Alerta Médico Urgente</h2>
+            <h2 className="text-[10px] md:text-xs font-bold tracking-[0.3em] uppercase text-red-600 mb-4 animate-pulse">A Verdadeira Causa</h2>
             <h3 className="font-serif text-3xl md:text-5xl font-black text-[#0F172A] max-w-4xl mx-auto leading-tight">
-              Se você não tratar essa dor hoje, se prepare para a <span className="text-red-600 underline decoration-red-300">cadeira de rodas.</span>
+              A indústria farmacêutica quer você <span className="text-[#EA580C] underline decoration-orange-200">dependente para sempre.</span>
             </h3>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Texto Emocional e Ingredientes */}
-            <div className="space-y-8">
-              <div className="prose md:prose-lg text-[#6B7068] text-lg font-light leading-relaxed">
-                <p className="mb-4">
-                  A verdade que a indústria farmacêutica esconde de você: cada vez que você engole um analgésico de farmácia, sua cartilagem <strong className="text-red-600">derrete e apodrece um pouco mais</strong>. Hoje é apenas uma "pontada chata" ou um inchaço no joelho. Mas em poucos meses, <strong className="text-[#0F172A] font-bold">você pode perder completamente a capacidade de andar.</strong>
-                </p>
-                <p className="mb-4">
-                  O osso já está raspando no osso. Você quer mesmo passar o resto da vida numa cadeira de rodas, dependendo da sua família para tomar banho ou ir ao banheiro? A dor que você sente hoje é um <strong className="bg-red-100 text-red-700 px-1">ALARME DE EMERGÊNCIA</strong> do seu corpo gritando que a sua articulação está morrendo!
-                </p>
-                <p className="text-red-700 font-medium text-[20px] border-l-4 border-red-600 pl-5 bg-red-50 p-4 rounded-r-xl">
-                  Se você não parar esse desgaste nas próximas semanas, a única saída será uma <strong className="font-black">cirurgia invasiva de R$ 30.000,00</strong> com meses de fisioterapia dolorosa. A escolha é sua.
-                </p>
-              </div>
-              
-              <div className="bg-white p-8 rounded-3xl shadow-sm border border-[#EAE6DF]">
-                <h4 className="font-serif text-2xl text-[#0F172A] mb-6">A Revolução do Colágeno Tipo 2 🌿</h4>
-                <p className="text-[#6B7068] text-base font-light leading-relaxed mb-6">
-                  Nossa fórmula age de dentro para fora para reconstruir e desinflamar:
-                </p>
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-[#EA580C] shrink-0 mt-0.5" />
-                    <span className="text-[#4A4C48] text-[16px]"><strong className="text-[#0F172A]">Colágeno Tipo 2:</strong> Protege e reconstrói as cartilagens desgastadas, parando o atrito de osso com osso.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-[#EA580C] shrink-0 mt-0.5" />
-                    <span className="text-[#4A4C48] text-[16px]"><strong className="text-[#0F172A]">Curcumina em Gotas:</strong> O anti-inflamatório natural mais potente. Desincha os joelhos e tira a rigidez.</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
             {/* Imagem Joelho (Mecanismo de Ação) */}
-            <div className="relative transform hover:-translate-y-2 transition-transform duration-500">
+            <div className="relative transform hover:-translate-y-2 transition-transform duration-500 order-2 md:order-1">
               <div className="absolute inset-0 bg-[#EA580C] translate-x-3 translate-y-3 rounded-3xl opacity-20"></div>
               <img src="/alivax-joelho.png" alt="Reconstrução Articular" className="w-full max-w-sm mx-auto relative z-10 rounded-3xl shadow-2xl border-4 border-[#0F172A]" />
               <div className="absolute -bottom-6 -left-6 bg-white px-6 py-4 rounded-2xl shadow-xl z-20 flex items-center gap-3 border border-[#EAE6DF]">
-                <ShieldCheck className="w-6 h-6 text-[#EA580C]" />
+                <ShieldCheck className="w-6 h-6 text-red-600" />
                 <div>
-                  <p className="text-[#0F172A] font-bold text-sm">Ação Direta na Raiz</p>
-                  <p className="text-[#8B8D88] text-xs">Desinflama e restaura a cartilagem</p>
+                  <p className="text-[#0F172A] font-bold text-sm">Osso raspando no osso</p>
+                  <p className="text-[#8B8D88] text-xs">O atrito silencioso que te corrói por dentro</p>
                 </div>
+              </div>
+            </div>
+
+            {/* Texto Emocional */}
+            <div className="space-y-8 order-1 md:order-2">
+              <div className="prose md:prose-lg text-[#6B7068] text-lg font-light leading-relaxed">
+                <p className="mb-4">
+                  Cada vez que você engole um analgésico de farmácia, sua cartilagem <strong className="text-red-600">derrete e apodrece um pouco mais</strong>. Eles só mascaram a dor por algumas horas, enquanto o desgaste destruidor continua acontecendo silenciosamente.
+                </p>
+                <p className="mb-4">
+                  Hoje é apenas um inchaço no joelho. Mas se você não parar esse desgaste nas próximas semanas, <strong className="text-[#0F172A] font-bold">você vai perder a capacidade de andar sozinho.</strong> Você quer mesmo depender da sua família para tomar banho ou ir ao banheiro?
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Resultados Reais (Vídeos de Depoimento) */}
+      {/* Seção Desejo (Solução e Prova Social) */}
       <section className="py-20 md:py-24 bg-white border-t border-[#EAE6DF]">
-        <div className="max-w-5xl mx-auto px-4 relative z-10">
+        <div className="max-w-6xl mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-[10px] md:text-xs font-bold tracking-[0.3em] uppercase text-[#EA580C] mb-4">Eficácia Comprovada</h2>
-            <h3 className="font-serif text-3xl md:text-5xl font-light text-[#0F172A]">Veja os Resultados</h3>
+            <h2 className="text-[10px] md:text-xs font-bold tracking-[0.3em] uppercase text-[#EA580C] mb-4">A Única Saída</h2>
+            <h3 className="font-serif text-3xl md:text-5xl font-light text-[#0F172A]">
+              Milhares de pessoas já <span className="font-bold">escaparam da faca.</span>
+            </h3>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-2xl mx-auto">
@@ -153,6 +136,30 @@ export default function AlivaxLP() {
             </div>
             <div className="relative rounded-[2rem] overflow-hidden aspect-[9/16] bg-slate-900 shadow-[0_20px_50px_rgba(0,0,0,0.1)] border-8 border-[#FDFBF7] group hover:border-[#EA580C] transition-colors">
               <video src="/alivax-depoimento-2.mp4" controls className="w-full h-full object-cover"></video>
+            </div>
+          </div>
+
+          {/* A Formula */}
+          <div className="bg-[#FDFBF7] p-8 md:p-12 rounded-[2rem] shadow-sm border border-[#EAE6DF] max-w-4xl mx-auto mt-16">
+            <div className="text-center mb-10">
+              <h4 className="font-serif text-3xl text-[#0F172A]">A Revolução Sublingual 🌿</h4>
+              <p className="text-[#6B7068] mt-4 font-light text-lg">A única fórmula aprovada capaz de agir de dentro para fora, diretamente na raiz da inflamação:</p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="flex items-start gap-4">
+                <CheckCircle2 className="w-8 h-8 text-[#EA580C] shrink-0" />
+                <div>
+                  <h5 className="font-bold text-[#0F172A] mb-1 text-lg">Colágeno Tipo 2 Puro</h5>
+                  <p className="text-[#4A4C48] text-sm leading-relaxed">O único ativo capaz de reconstruir a cartilagem desgastada, preenchendo as falhas e <strong className="text-black">parando o atrito "osso com osso".</strong></p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <CheckCircle2 className="w-8 h-8 text-[#EA580C] shrink-0" />
+                <div>
+                  <h5 className="font-bold text-[#0F172A] mb-1 text-lg">Curcumina Concentrada</h5>
+                  <p className="text-[#4A4C48] text-sm leading-relaxed">O anti-inflamatório natural mais potente do mundo. <strong className="text-black">Desincha os joelhos e devolve a flexibilidade</strong> nos primeiros dias de uso.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
