@@ -2,9 +2,9 @@ import { ShieldCheck, Truck, ArrowRight, CheckCircle2, Sparkles, Leaf, ChevronRi
 
 export default function AlivaxLP() {
   const queryParams = typeof window !== 'undefined' ? window.location.search : '';
-  // TODO: Update links with real logzz URLs for Alivax when available
-  const link1Unidade = `https://entrega.logzz.com.br/pay/alivax-1-unidade${queryParams}`;
-  const link3Unidades = `https://entrega.logzz.com.br/pay/alivax-3-unidades${queryParams}`;
+  const link1Unidade = `https://entrega.logzz.com.br/pay/pkvhq-1-alivax${queryParams}`;
+  const link2Unidades = `https://entrega.logzz.com.br/pay/kit-compre-1-leve-2${queryParams}`;
+  const link3Unidades = `https://entrega.logzz.com.br/pay/qftlh-kit-3-unidades${queryParams}`;
 
   const handleInitiateCheckout = (productName: string, value: number) => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -19,125 +19,116 @@ export default function AlivaxLP() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FDFBF7] font-sans text-slate-800 selection:bg-[#D4A373]/20">
+    <div className="min-h-screen bg-[#FDFBF7] font-sans text-slate-800 selection:bg-[#EA580C]/20 overflow-x-hidden">
       
-      {/* Top Bar - Elegante */}
-      <div className="bg-[#2C362B] text-[#FDFBF7] text-center py-2.5 px-4 text-[11px] md:text-xs font-semibold tracking-[0.2em] uppercase">
-        Últimas unidades do Lote com <span className="text-[#D4A373]">Frete Grátis e Pagamento na Entrega</span>
+      {/* Top Bar - Urgência e Oferta */}
+      <div className="bg-[#0F172A] text-white text-center py-2.5 px-4 text-[11px] md:text-xs font-semibold tracking-[0.2em] uppercase">
+        ⚠️ ALERTA: Últimas unidades do Lote com <span className="text-[#EA580C]">Frete Grátis e Pagamento na Entrega</span>
       </div>
 
       {/* Hero Section Premium com Produto */}
       <header className="relative pt-12 pb-20 px-4 overflow-hidden border-b border-[#EAE6DF] bg-white">
         {/* Decorative Gradients */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[#D4A373]/10 blur-[120px] rounded-full pointer-events-none"></div>
-        <div className="absolute top-20 -left-40 w-[400px] h-[400px] bg-[#2C362B]/5 blur-[100px] rounded-full pointer-events-none"></div>
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[#EA580C]/10 blur-[120px] rounded-full pointer-events-none"></div>
+        <div className="absolute top-20 -left-40 w-[400px] h-[400px] bg-[#0F172A]/5 blur-[100px] rounded-full pointer-events-none"></div>
 
         <div className="max-w-6xl mx-auto relative z-10 flex flex-col md:flex-row items-center gap-12">
           
           {/* Copy Hero */}
           <div className="flex-1 text-center md:text-left">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#D4A373]/10 text-[#2C362B] text-xs font-bold tracking-widest uppercase mb-8 border border-[#D4A373]/20">
-              <Sparkles className="w-4 h-4 text-[#D4A373]" /> Fórmula Sublingual e Cápsulas
+            <div className="inline-flex items-center gap-2 bg-white/60 backdrop-blur-md px-4 py-1.5 rounded-full text-[#EA580C] text-xs font-bold uppercase tracking-widest mb-6 border border-[#EA580C]/20 shadow-sm">
+              <Sparkles className="w-3.5 h-3.5" /> Fórmula Sublingual de Ação Rápida
             </div>
             
-            <h1 className="text-4xl md:text-6xl font-serif text-[#2C362B] mb-6 leading-[1.1] tracking-tight">
-              Diga Adeus às Dores Articulares e <span className="relative inline-block"><span className="relative z-10 text-[#D4A373] italic">Volte a se Movimentar</span><div className="absolute bottom-2 left-0 w-full h-3 bg-[#D4A373]/20 -rotate-1"></div></span>
+            <h1 className="text-4xl md:text-6xl font-serif text-[#0F172A] mb-6 leading-[1.1] tracking-tight">
+              Desligue a 'Chave da Dor' nas suas articulações e <span className="relative inline-block"><span className="relative z-10 text-[#EA580C] italic">Volte a se Movimentar</span><div className="absolute bottom-2 left-0 w-full h-3 bg-[#EA580C]/20 -rotate-1"></div></span>
             </h1>
             
-            <p className="text-lg text-[#6B7068] mb-10 max-w-xl mx-auto md:mx-0 font-light leading-relaxed">
-              O único tratamento com <strong className="text-[#2C362B] font-bold">Colágeno Tipo II</strong> que age diretamente na raiz da inflamação. Zero Açúcares, Zero Glúten.
+            <p className="text-lg md:text-xl text-[#6B7068] font-light mb-8 leading-relaxed max-w-xl mx-auto md:mx-0">
+              O tratamento pioneiro em gotas com <strong className="text-[#0F172A] font-bold">Colágeno Tipo 2 e Curcumina</strong> que age direto na raiz da inflamação. Sem injeções ou remédios fortes.
             </p>
             
-            <div className="flex flex-col md:flex-row items-center gap-4 mb-4">
-              <a href="#oferta" className="w-full md:w-auto group relative inline-flex items-center justify-center gap-3 bg-[#2C362B] text-white px-10 py-5 rounded-full font-medium tracking-widest uppercase text-sm overflow-hidden transition-all hover:scale-[1.02] hover:shadow-[0_15px_40px_-10px_rgba(44,54,43,0.5)]">
-                <span className="relative z-10 flex items-center gap-2">Resgatar Minha Autoestima <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" /></span>
-                <div className="absolute inset-0 bg-gradient-to-r from-[#2C362B] to-[#3f4d3e] opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="flex flex-col items-center md:items-start gap-1 mb-4 w-full">
+              <a href="#oferta" className="w-full md:w-auto group relative inline-flex items-center justify-center gap-2 bg-[#0F172A] text-white px-8 md:px-12 py-5 rounded-full font-medium overflow-hidden transition-all hover:scale-[1.02] hover:shadow-[0_15px_40px_-10px_rgba(15,23,42,0.5)] shadow-lg">
+                <span className="relative z-10 flex items-center gap-2 tracking-widest uppercase text-[15px] font-black text-center">
+                  QUERO ALÍVIO AGORA <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#0F172A] to-[#1E3A8A] opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </a>
-            </div>
-            
-            <div className="inline-flex items-center gap-3 bg-[#D4A373]/10 border border-[#D4A373]/30 px-5 py-3 rounded-2xl text-[#2C362B] text-xs font-bold uppercase tracking-wider mx-auto md:mx-0">
-              <Truck className="w-5 h-5 text-[#D4A373]" /> 
-              <span>ZERO RISCO: <strong className="text-[#D4A373]">PAGUE APENAS NA ENTREGA!</strong></span>
+              <div className="flex items-center justify-center gap-1.5 text-xs md:text-sm text-[#6B7068] font-semibold mt-2 mx-auto md:mx-0 text-center w-full md:w-auto">
+                <ShieldCheck className="w-4 h-4 text-green-600" /> Risco Zero: Pague apenas quando o entregador chegar.
+              </div>
             </div>
           </div>
 
           {/* Imagem do Produto */}
           <div className="flex-1 relative">
-            <div className="absolute inset-0 bg-[#D4A373]/10 blur-[80px] rounded-full scale-75"></div>
-            <img src="/alivax.png" alt="ALIVAX - Movimento Sem Dor" className="w-full h-[500px] object-contain drop-shadow-2xl mix-blend-multiply relative z-10" />
+            <div className="absolute inset-0 bg-[#EA580C]/10 blur-[80px] rounded-full scale-75"></div>
+            <img src="/alivax-produto.png" alt="ALIVAX em gotas" className="w-full max-w-md mx-auto relative z-10 drop-shadow-[0_20px_50px_rgba(0,0,0,0.15)] animate-pulse" style={{ animationDuration: '4s' }} />
               
               {/* Badges Flutuantes */}
               <div className="absolute top-10 -right-4 bg-white/90 backdrop-blur-sm p-3 rounded-2xl shadow-xl border border-[#EAE6DF] z-20 flex items-center gap-3">
-                <div className="w-10 h-10 bg-[#D4A373]/20 rounded-full flex items-center justify-center">
-                  <Droplets className="w-5 h-5 text-[#2C362B]" />
+                <div className="w-10 h-10 bg-[#EA580C]/20 rounded-full flex items-center justify-center">
+                  <Droplets className="w-5 h-5 text-[#0F172A]" />
                 </div>
                 <div className="text-left">
                   <p className="text-[10px] text-[#8B8D88] font-bold uppercase">Absorção</p>
-                  <p className="text-sm font-bold text-[#2C362B]">Sublingual Rápida</p>
-                </div>
-              </div>
-
-              <div className="absolute bottom-20 -left-4 bg-white/90 backdrop-blur-sm p-3 rounded-2xl shadow-xl border border-[#EAE6DF] z-20 flex items-center gap-3">
-                <div className="w-10 h-10 bg-[#2C362B]/10 rounded-full flex items-center justify-center">
-                  <Leaf className="w-5 h-5 text-[#2C362B]" />
-                </div>
-                <div className="text-left">
-                  <p className="text-[10px] text-[#8B8D88] font-bold uppercase">Fórmula</p>
-                  <p className="text-sm font-bold text-[#2C362B]">Zero Açúcares</p>
+                  <p className="text-sm font-bold text-[#0F172A]">Sublingual Rápida</p>
                 </div>
               </div>
           </div>
         </div>
       </header>
 
-      {/* Seção Emocional & Fórmula (O Segredo) */}
+      {/* Seção Emocional & Fórmula */}
       <section className="py-20 bg-[#FDFBF7]">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-[10px] md:text-xs font-bold tracking-[0.3em] uppercase text-[#D4A373] mb-4">A Verdadeira Causa da Dor</h2>
-            <h3 className="font-serif text-3xl md:text-5xl font-light text-[#2C362B] max-w-3xl mx-auto leading-tight">
-              Por que você tomou tantos remédios e a dor <span className="italic text-[#D4A373]">sempre volta?</span>
+            <h2 className="text-[10px] md:text-xs font-bold tracking-[0.3em] uppercase text-[#EA580C] mb-4">A Verdadeira Causa da Dor</h2>
+            <h3 className="font-serif text-3xl md:text-5xl font-light text-[#0F172A] max-w-3xl mx-auto leading-tight">
+              Por que você tomou tantos remédios e a dor <span className="italic text-[#EA580C]">sempre volta?</span>
             </h3>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Texto Emocional e Ingredientes */}
             <div className="space-y-8">
-              <p className="text-[#6B7068] text-lg font-light leading-relaxed">
-                Sabemos o quão frustrante é gastar fortunas com anti-inflamatórios fortes que só mascaram a dor e destroem seu estômago. O medo de uma cirurgia ou de perder a autonomia para subir uma escada e brincar com os netos é real. E quando o efeito do remédio passa... <strong>a pontada no joelho volta ainda pior.</strong>
-              </p>
+              <div className="prose md:prose-lg text-[#6B7068] text-lg font-light leading-relaxed">
+                <p className="mb-4">
+                  Sabemos o quão frustrante é gastar fortunas com anti-inflamatórios fortes que só mascaram a dor e destroem seu estômago. O medo de perder a autonomia para subir uma escada e brincar com os netos é real. E quando o efeito do remédio passa... <strong>a pontada volta ainda pior.</strong>
+                </p>
+                <p className="text-[#0F172A] font-medium text-[22px] border-l-4 border-[#EA580C] pl-5 italic">
+                  As articulações só se curam de verdade quando a cartilagem é restaurada.
+                </p>
+              </div>
               
               <div className="bg-white p-8 rounded-3xl shadow-sm border border-[#EAE6DF]">
-                <h4 className="font-serif text-2xl text-[#2C362B] mb-6">A Revolução do Colágeno Tipo 2 🌿</h4>
-                <p className="text-[#6B7068] text-sm font-light leading-relaxed mb-6">
-                  Descobrimos que as articulações só se curam de verdade quando a cartilagem é restaurada de dentro para fora:
+                <h4 className="font-serif text-2xl text-[#0F172A] mb-6">A Revolução do Colágeno Tipo 2 🌿</h4>
+                <p className="text-[#6B7068] text-base font-light leading-relaxed mb-6">
+                  Nossa fórmula age de dentro para fora para reconstruir e desinflamar:
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" />
-                    <span className="text-[#4A4C48] text-[15px]"><strong className="text-[#2C362B]">Colágeno Tipo 2 (UC-II):</strong> Protege e reconstrói as cartilagens desgastadas, acabando com o doloroso atrito de "osso com osso".</span>
+                    <CheckCircle2 className="w-5 h-5 text-[#EA580C] shrink-0 mt-0.5" />
+                    <span className="text-[#4A4C48] text-[16px]"><strong className="text-[#0F172A]">Colágeno Tipo 2:</strong> Protege e reconstrói as cartilagens desgastadas, parando o atrito de osso com osso.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" />
-                    <span className="text-[#4A4C48] text-[15px]"><strong className="text-[#2C362B]">Curcumina em Gotas:</strong> O anti-inflamatório natural mais potente do mundo. Desincha os joelhos e tira a rigidez matinal.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" />
-                    <span className="text-[#4A4C48] text-[15px]"><strong className="text-[#2C362B]">Magnésio + Glucosamina:</strong> Relaxa a musculatura, evita cãibras e atua como um lubrificante poderoso para devolver a sua mobilidade.</span>
+                    <CheckCircle2 className="w-5 h-5 text-[#EA580C] shrink-0 mt-0.5" />
+                    <span className="text-[#4A4C48] text-[16px]"><strong className="text-[#0F172A]">Curcumina em Gotas:</strong> O anti-inflamatório natural mais potente. Desincha os joelhos e tira a rigidez.</span>
                   </li>
                 </ul>
               </div>
             </div>
 
-            {/* Imagem Depoimento ZAP (A Prova Social Indiscutível) */}
+            {/* Imagem Depoimento ZAP */}
             <div className="relative transform rotate-2 hover:rotate-0 transition-transform duration-500">
-              <div className="absolute inset-0 bg-[#D4A373] translate-x-3 translate-y-3 rounded-3xl opacity-20"></div>
+              <div className="absolute inset-0 bg-[#EA580C] translate-x-3 translate-y-3 rounded-3xl opacity-20"></div>
               <img src="/depoimento-zap.png" alt="Cliente elogiando no WhatsApp" className="w-full max-w-sm mx-auto relative z-10 rounded-3xl shadow-2xl border-4 border-white" />
               <div className="absolute -bottom-6 -left-6 bg-white px-6 py-4 rounded-2xl shadow-xl z-20 flex items-center gap-3 border border-[#EAE6DF]">
                 <Heart className="w-6 h-6 fill-red-500 text-red-500" />
                 <div>
-                  <p className="text-[#2C362B] font-bold text-sm">Milhares de clientes felizes</p>
-                  <p className="text-[#8B8D88] text-xs">A autoestima de volta em poucas semanas!</p>
+                  <p className="text-[#0F172A] font-bold text-sm">Alívio Rápido</p>
+                  <p className="text-[#8B8D88] text-xs">Milhares de clientes recuperaram a mobilidade.</p>
                 </div>
               </div>
             </div>
@@ -147,181 +138,129 @@ export default function AlivaxLP() {
 
       {/* Benefícios Rápidos */}
       <section className="py-16 bg-white border-y border-[#EAE6DF]">
-        <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-8">
+        <div className="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="flex flex-col items-center text-center group">
-            <Droplets className="w-10 h-10 text-[#D4A373] mb-4 group-hover:scale-110 transition-transform" />
-            <h3 className="font-bold text-[#2C362B] mb-2 uppercase tracking-wider text-xs">Ação Rápida</h3>
-            <p className="text-[#6B7068] text-xs font-light">A fórmula em gotas sublinguais tem absorção 10x mais rápida que cápsulas comuns.</p>
+            <Droplets className="w-10 h-10 text-[#EA580C] mb-4 group-hover:scale-110 transition-transform" />
+            <h3 className="font-bold text-[#0F172A] mb-2 uppercase tracking-wider text-xs">Ação Rápida</h3>
+            <p className="text-[#6B7068] text-xs font-light">Gotas sublinguais com absorção 10x mais rápida que cápsulas comuns.</p>
           </div>
           <div className="flex flex-col items-center text-center group">
-            <Shield className="w-10 h-10 text-[#D4A373] mb-4 group-hover:scale-110 transition-transform" />
-            <h3 className="font-bold text-[#2C362B] mb-2 uppercase tracking-wider text-xs">Sem Efeitos Colaterais</h3>
-            <p className="text-[#6B7068] text-xs font-light">100% natural. Não agride o estômago, fígado ou rins como os remédios sintéticos.</p>
+            <Shield className="w-10 h-10 text-[#EA580C] mb-4 group-hover:scale-110 transition-transform" />
+            <h3 className="font-bold text-[#0F172A] mb-2 uppercase tracking-wider text-xs">Sem Colaterais</h3>
+            <p className="text-[#6B7068] text-xs font-light">100% natural. Não agride o estômago nem o fígado.</p>
           </div>
           <div className="flex flex-col items-center text-center group">
-            <Leaf className="w-10 h-10 text-[#D4A373] mb-4 group-hover:scale-110 transition-transform" />
-            <h3 className="font-bold text-[#2C362B] mb-2 uppercase tracking-wider text-xs">Reconstrução</h3>
-            <p className="text-[#6B7068] text-xs font-light">Não apenas tira a dor, mas estimula a reconstrução da cartilagem gasta.</p>
+            <Leaf className="w-10 h-10 text-[#EA580C] mb-4 group-hover:scale-110 transition-transform" />
+            <h3 className="font-bold text-[#0F172A] mb-2 uppercase tracking-wider text-xs">Reconstrução</h3>
+            <p className="text-[#6B7068] text-xs font-light">Não apenas tira a dor, mas ajuda a reconstruir a cartilagem.</p>
           </div>
           <div className="flex flex-col items-center text-center group">
-            <Sparkles className="w-10 h-10 text-[#D4A373] mb-4 group-hover:scale-110 transition-transform" />
-            <h3 className="font-bold text-[#2C362B] mb-2 uppercase tracking-wider text-xs">Zero Açúcares</h3>
-            <p className="text-[#6B7068] text-xs font-light">Livre de glúten, lactose e gorduras. Totalmente seguro para diabéticos.</p>
+            <Sparkles className="w-10 h-10 text-[#EA580C] mb-4 group-hover:scale-110 transition-transform" />
+            <h3 className="font-bold text-[#0F172A] mb-2 uppercase tracking-wider text-xs">Zero Açúcares</h3>
+            <p className="text-[#6B7068] text-xs font-light">Seguro para diabéticos e hipertensos. Não engorda.</p>
           </div>
         </div>
       </section>
 
-      {/* Resultados Reais (Imagens do Usuário e Vídeos) */}
-      <section className="py-20 md:py-28 bg-[#FDFBF7] relative px-4">
-        <div className="max-w-5xl mx-auto relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-[10px] md:text-xs font-bold tracking-[0.3em] uppercase text-[#D4A373] mb-4">Eficácia Comprovada</h2>
-            <h3 className="font-serif text-3xl md:text-5xl font-light text-[#2C362B]">Resultados Reais</h3>
-          </div>
-
-          {/* Videos de Depoimento - Minimalistas */}
-          <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-2xl mx-auto">
-            <div className="relative rounded-[2rem] overflow-hidden aspect-[9/16] bg-slate-900 shadow-[0_20px_50px_rgba(0,0,0,0.1)] border-8 border-white group">
-              <video src="/depoimento-1.mov" controls className="w-full h-full object-cover"></video>
-            </div>
-            <div className="relative rounded-[2rem] overflow-hidden aspect-[9/16] bg-slate-900 shadow-[0_20px_50px_rgba(0,0,0,0.1)] border-8 border-white group">
-              <video src="/depoimento-2.mp4" controls className="w-full h-full object-cover"></video>
-            </div>
-          </div>
-          
-          {/* Fotos Clean - Sem textos e sem fundos escuros */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            {/* Foto 1 */}
-            <div className="aspect-square rounded-3xl overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.08)] border-4 border-white transform transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]">
-              <img src="/antes-depois-4.png" alt="Melasma Rosto 2 meses" className="w-full h-full object-cover object-center" />
-            </div>
-
-            {/* Foto 2 */}
-            <div className="aspect-square rounded-3xl overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.08)] border-4 border-white transform transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]">
-              <img src="/antes-depois-2.jpeg" alt="Marcas de Acne" className="w-full h-full object-cover object-center" />
-            </div>
-
-            {/* Foto 3 */}
-            <div className="aspect-square rounded-3xl overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.08)] border-4 border-white transform transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]">
-              <img src="/antes-depois-pescoco.jpg" alt="Pescoço 22 dias" className="w-full h-full object-cover object-center" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Oferta / Checkout Logzz - Design Glassmorphism Elegante */}
+      {/* Oferta / Checkout Logzz */}
       <section id="oferta" className="py-20 md:py-28 px-4 relative bg-white">
-        {/* Background blobs for premium feel */}
-        <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-[#D4A373]/10 blur-[120px] rounded-full pointer-events-none -translate-y-1/2"></div>
+        <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-[#EA580C]/10 blur-[120px] rounded-full pointer-events-none -translate-y-1/2"></div>
         
-        <div className="max-w-5xl mx-auto relative z-10">
+        <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl md:text-5xl font-medium mb-4 text-[#2C362B] tracking-tight">O Fim das Dores Chegou</h2>
-            <div className="inline-flex items-center gap-2 bg-[#D4A373]/10 text-[#D4A373] px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest border border-[#D4A373]/20 mb-4">
-              <ShieldCheck className="w-4 h-4" /> 100% Seguro: Sem medo de golpes
+            <h2 className="font-serif text-4xl md:text-5xl font-medium mb-4 text-[#0F172A] tracking-tight">O Fim das Dores Chegou</h2>
+            <div className="inline-flex items-center gap-2 bg-red-50 text-red-600 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest border border-red-100 mb-4 animate-pulse">
+              ⚠️ Restam apenas 15 unidades do Lote Atual
             </div>
-            <p className="text-[#6B7068] font-light max-w-xl mx-auto text-lg">Selecione o seu tratamento abaixo. Você não precisa de cartão de crédito: <strong>pague apenas ao entregador</strong> na sua porta.</p>
+            <p className="text-[#6B7068] font-light max-w-xl mx-auto text-lg mt-4">
+              Escolha seu tratamento. É 100% seguro: <strong>Você só paga quando o entregador deixar o produto nas suas mãos.</strong>
+            </p>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-8 lg:gap-12 justify-center items-stretch mt-12">
+          <div className="flex flex-col lg:flex-row gap-6 justify-center items-stretch mt-12">
             
-            {/* Kit Básico - 1 Unidade */}
-            <div className="w-full md:w-[380px] bg-white rounded-[2rem] border border-[#EAE6DF] shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-500 overflow-hidden flex flex-col group relative">
-              <div className="relative h-64 overflow-hidden bg-white">
-                <img src="/alivax.png" alt="1 Unidade Alivax" className="w-full h-full object-cover mix-blend-multiply transform group-hover:scale-105 transition-transform duration-700 opacity-90" />
-                <div className="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-transparent"></div>
-              </div>
-              
-              <div className="p-8 pt-0 flex-1 flex flex-col relative z-10 -mt-10">
+            {/* Kit 1 Unidade */}
+            <div className="w-full lg:w-[340px] bg-white rounded-[2rem] border border-[#EAE6DF] shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-500 overflow-hidden flex flex-col group relative">
+              <div className="p-8 flex-1 flex flex-col relative z-10">
                 <div className="text-center mb-6">
-                  <h3 className="font-serif text-3xl text-[#2C362B] mb-1">1 Unidade</h3>
+                  <h3 className="font-serif text-3xl text-[#0F172A] mb-1">1 Frasco</h3>
                   <p className="text-[#8B8D88] text-[10px] font-bold uppercase tracking-[0.2em]">Tratamento Inicial</p>
                 </div>
                 <div className="text-center mb-6 bg-[#FDFBF7] py-4 rounded-2xl border border-[#EAE6DF]/50">
-                  <span className="block text-[#A9ACA6] text-xs line-through mb-1 font-light">De R$ 147,00</span>
-                  <div className="font-serif text-5xl text-[#2C362B] tracking-tight">R$ 97<span className="text-2xl">,90</span></div>
+                  <span className="block text-[#A9ACA6] text-xs line-through mb-1 font-light">De R$ 197,00</span>
+                  <div className="font-serif text-5xl text-[#0F172A] tracking-tight">R$ 129<span className="text-2xl">,90</span></div>
                 </div>
                 <ul className="space-y-4 mb-8 pt-4 flex-1">
-                  <li className="flex items-start gap-3 text-sm text-[#4A4C48] font-light"><CheckCircle2 className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" /> <span>Alívio nas <strong>primeiras semanas</strong></span></li>
-                  <li className="flex items-start gap-3 text-sm text-[#4A4C48] font-light"><CheckCircle2 className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" /> <span>Desinflamação (Rende 1 Mês)</span></li>
-                  <li className="flex items-start gap-3 text-sm text-[#4A4C48] font-light"><CheckCircle2 className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" /> <span><strong>Pague apenas ao entregador</strong></span></li>
+                  <li className="flex items-start gap-3 text-base text-[#4A4C48] font-light"><CheckCircle2 className="w-5 h-5 text-[#EA580C] shrink-0 mt-0.5" /> <span>Alívio nas primeiras semanas</span></li>
+                  <li className="flex items-start gap-3 text-base text-[#4A4C48] font-light"><CheckCircle2 className="w-5 h-5 text-[#EA580C] shrink-0 mt-0.5" /> <span>Rende 1 Mês de uso</span></li>
                 </ul>
-                <a href={link1Unidade} onClick={() => handleInitiateCheckout('1 Unidade Alivax', 97.90)} className="w-full flex flex-col items-center justify-center gap-1 bg-[#FDFBF7] border border-[#EAE6DF] text-[#2C362B] hover:bg-[#2C362B] hover:text-white hover:border-[#2C362B] py-4 rounded-2xl font-bold tracking-widest uppercase text-[11px] transition-all shadow-sm">
-                  <span className="flex items-center gap-2">Pedir 1 Unidade <ChevronRight className="w-4 h-4" /></span>
-                  <span className="text-[9px] opacity-70 normal-case font-medium">E pagar apenas na entrega</span>
-                </a>
+                <div className="w-full flex flex-col items-center">
+                  <a href={link1Unidade} onClick={() => handleInitiateCheckout('1 Unidade Alivax', 129.90)} className="w-full flex items-center justify-center gap-2 bg-[#EA580C] hover:bg-[#c24102] text-white py-5 rounded-2xl font-black tracking-widest uppercase text-[15px] transition-all shadow-md group">
+                    Pedir 1 Frasco <ChevronRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                  </a>
+                  <div className="flex items-center justify-center gap-1.5 text-xs text-[#6B7068] font-bold mt-3 text-center">
+                    <ShieldCheck className="w-3.5 h-3.5 text-green-600" /> Pague apenas na entrega
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* Kit Premium - Compre 2 Leve 3 */}
-            <div className="w-full md:w-[420px] bg-[#2C362B] rounded-[2rem] relative shadow-[0_20px_50px_rgb(44,54,43,0.3)] transform md:scale-105 border border-[#D4A373]/40 overflow-hidden flex flex-col group">
-              <div className="absolute top-0 left-0 right-0 bg-[#D4A373] text-[#2C362B] text-center py-2.5 font-black text-[10px] uppercase tracking-[0.2em] shadow-[0_10px_20px_rgba(0,0,0,0.2)] z-30">
-                🏆 O Mais Vendido: Tratamento Completo
+            {/* Kit 2 Unidades */}
+            <div className="w-full lg:w-[380px] bg-white rounded-[2rem] border-2 border-[#EA580C] shadow-[0_15px_40px_rgb(234,88,12,0.15)] transform lg:-translate-y-4 transition-all duration-500 overflow-hidden flex flex-col group relative z-10">
+              <div className="absolute top-0 left-0 right-0 bg-[#EA580C] text-white text-center py-2.5 font-black text-[10px] uppercase tracking-[0.2em] z-30">
+                ⭐ Oferta Especial: Compre 1, Leve 2
               </div>
-              
-              <div className="relative h-72 overflow-hidden mt-8">
-                <img src="/alivax.png" alt="3 Unidades Alivax" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-80" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#2C362B] via-[#2C362B]/80 to-transparent"></div>
-              </div>
-              
-              <div className="p-8 pt-0 flex-1 flex flex-col relative z-20 -mt-20">
+              <div className="p-8 pt-12 flex-1 flex flex-col relative z-20">
                 <div className="text-center mb-6">
-                  <h3 className="font-serif text-4xl text-[#FDFBF7] mb-1">Compre 2, Leve 3</h3>
-                  <p className="text-[#D4A373] text-[10px] font-bold uppercase tracking-[0.2em]">O Fim Definitivo das Dores</p>
+                  <h3 className="font-serif text-4xl text-[#0F172A] mb-1">2 Frascos</h3>
+                  <p className="text-[#EA580C] text-[10px] font-bold uppercase tracking-[0.2em]">Ideal para 2 Meses</p>
                 </div>
                 <div className="text-center mb-6 relative">
-                  <div className="absolute -top-4 right-0 bg-red-500 text-white text-[9px] font-black tracking-widest uppercase px-3 py-1 rounded-full shadow-lg transform rotate-6 animate-pulse">
-                    🎁 Leve +1 de Graça
-                  </div>
-                  <span className="block text-white/40 text-sm line-through mb-1 font-light">De R$ 293,70</span>
-                  <div className="font-serif text-6xl text-[#D4A373] tracking-tight">R$ 247</div>
-                  <span className="block text-[#D4A373]/70 text-[10px] uppercase tracking-widest mt-2">Você economiza R$ 46,70</span>
+                  <span className="block text-[#A9ACA6] text-sm line-through mb-1 font-light">De R$ 259,80</span>
+                  <div className="font-serif text-6xl text-[#0F172A] tracking-tight">R$ 189<span className="text-2xl">,90</span></div>
                 </div>
-                <ul className="space-y-4 mb-8 pt-4 flex-1 border-t border-white/10">
-                  <li className="flex items-start gap-3 text-sm text-[#EAE6DF] font-light"><CheckCircle2 className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" /> <span><strong>Reconstrução da cartilagem</strong></span></li>
-                  <li className="flex items-start gap-3 text-sm text-[#EAE6DF] font-light"><CheckCircle2 className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" /> <span>Devolve a mobilidade e flexibilidade</span></li>
-                  <li className="flex items-start gap-3 text-sm text-[#EAE6DF] font-light"><CheckCircle2 className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" /> <span>Tratamento intensivo (Rende 3 Meses)</span></li>
-                  <li className="flex items-start gap-3 text-sm text-[#EAE6DF] font-light"><CheckCircle2 className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" /> <span><strong>Pague apenas ao entregador</strong></span></li>
+                <ul className="space-y-4 mb-8 pt-2 flex-1">
+                  <li className="flex items-start gap-3 text-base text-[#4A4C48] font-light"><CheckCircle2 className="w-5 h-5 text-[#EA580C] shrink-0 mt-0.5" /> <span><strong>Tratamento recomendado</strong></span></li>
+                  <li className="flex items-start gap-3 text-base text-[#4A4C48] font-light"><CheckCircle2 className="w-5 h-5 text-[#EA580C] shrink-0 mt-0.5" /> <span>Desinflamação profunda</span></li>
+                  <li className="flex items-start gap-3 text-base text-[#4A4C48] font-light"><CheckCircle2 className="w-5 h-5 text-[#EA580C] shrink-0 mt-0.5" /> <span>Devolve a flexibilidade</span></li>
                 </ul>
-                <a href={link3Unidades} onClick={() => handleInitiateCheckout('Kit 3 Unidades Alivax', 247.00)} className="w-full flex flex-col items-center justify-center gap-1 bg-[#D4A373] hover:bg-[#c09162] text-[#2C362B] py-5 rounded-2xl font-bold tracking-widest uppercase text-[12px] transition-all hover:scale-[1.02] shadow-[0_10px_30px_rgba(212,163,115,0.4)] relative overflow-hidden group/btn">
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover/btn:animate-[shimmer_1.5s_infinite]"></div>
-                  <span className="flex items-center gap-2 relative z-10">Agendar Minha Entrega <ChevronRight className="w-5 h-5" /></span>
-                  <span className="text-[10px] opacity-80 normal-case font-medium relative z-10">Pague apenas quando receber o produto</span>
-                </a>
+                <div className="w-full flex flex-col items-center">
+                  <a href={link2Unidades} onClick={() => handleInitiateCheckout('2 Unidades Alivax', 189.90)} className="w-full flex items-center justify-center gap-2 bg-[#EA580C] hover:bg-[#c24102] text-white py-5 rounded-2xl font-black tracking-widest uppercase text-[16px] transition-all hover:scale-[1.02] shadow-[0_15px_30px_rgba(234,88,12,0.4)] relative overflow-hidden group/btn">
+                    <span className="flex items-center gap-2 relative z-10">Levar 2 Frascos <ChevronRight className="w-6 h-6 transition-transform group-hover/btn:translate-x-1" /></span>
+                  </a>
+                  <div className="flex items-center justify-center gap-1.5 text-xs text-[#6B7068] font-bold mt-3 text-center">
+                    <ShieldCheck className="w-4 h-4 text-green-600" /> Pague apenas na entrega
+                  </div>
+                </div>
               </div>
             </div>
 
-          </div>
-        </div>
-      </section>
-      {/* FAQ - Perguntas Frequentes */}
-      <section className="py-20 bg-[#FDFBF7] border-t border-[#EAE6DF]">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-[10px] md:text-xs font-bold tracking-[0.3em] uppercase text-[#D4A373] mb-4">Tire suas dúvidas</h2>
-            <h3 className="font-serif text-3xl md:text-5xl font-light text-[#2C362B]">Perguntas Frequentes</h3>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white p-8 rounded-3xl border border-[#EAE6DF] shadow-sm hover:shadow-md transition-shadow">
-              <h4 className="flex items-start gap-3 font-bold text-[#2C362B] mb-3 leading-tight"><HelpCircle className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" /> Como funciona o Pagamento na Entrega?</h4>
-              <p className="text-[#6B7068] text-sm font-light leading-relaxed pl-8">Você não precisa de cartão de crédito. Faça o pedido aqui no site e pague o valor apenas no momento em que o entregador chegar na sua casa com o produto em mãos.</p>
+            {/* Kit 3 Unidades */}
+            <div className="w-full lg:w-[340px] bg-[#0F172A] rounded-[2rem] border border-[#1E3A8A] shadow-[0_8px_30px_rgb(0,0,0,0.2)] hover:shadow-[0_20px_40px_rgb(15,23,42,0.4)] transition-all duration-500 overflow-hidden flex flex-col group relative">
+              <div className="p-8 flex-1 flex flex-col relative z-10">
+                <div className="text-center mb-6">
+                  <h3 className="font-serif text-3xl text-white mb-1">3 Frascos</h3>
+                  <p className="text-[#EA580C] text-[10px] font-bold uppercase tracking-[0.2em]">Tratamento Completo</p>
+                </div>
+                <div className="text-center mb-6 bg-[#1E3A8A]/30 py-4 rounded-2xl border border-[#1E3A8A]">
+                  <span className="block text-white/50 text-xs line-through mb-1 font-light">De R$ 389,70</span>
+                  <div className="font-serif text-5xl text-white tracking-tight">R$ 289<span className="text-2xl">,90</span></div>
+                </div>
+                <ul className="space-y-4 mb-8 pt-4 flex-1">
+                  <li className="flex items-start gap-3 text-base text-white/90 font-light"><CheckCircle2 className="w-5 h-5 text-[#EA580C] shrink-0 mt-0.5" /> <span><strong>Reconstrução total</strong> da cartilagem</span></li>
+                  <li className="flex items-start gap-3 text-base text-white/90 font-light"><CheckCircle2 className="w-5 h-5 text-[#EA580C] shrink-0 mt-0.5" /> <span>Manutenção a longo prazo</span></li>
+                </ul>
+                <div className="w-full flex flex-col items-center">
+                  <a href={link3Unidades} onClick={() => handleInitiateCheckout('Kit 3 Unidades Alivax', 289.90)} className="w-full flex items-center justify-center gap-2 bg-[#EA580C] hover:bg-[#c24102] text-white py-5 rounded-2xl font-black tracking-widest uppercase text-[15px] transition-all shadow-md group">
+                    Levar 3 Frascos <ChevronRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                  </a>
+                  <div className="flex items-center justify-center gap-1.5 text-xs text-white/60 font-bold mt-3 text-center">
+                    <ShieldCheck className="w-3.5 h-3.5 text-green-400" /> Pague apenas na entrega
+                  </div>
+                </div>
+              </div>
             </div>
-            
-            <div className="bg-white p-8 rounded-3xl border border-[#EAE6DF] shadow-sm hover:shadow-md transition-shadow">
-              <h4 className="flex items-start gap-3 font-bold text-[#2C362B] mb-3 leading-tight"><HelpCircle className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" /> Em quanto tempo vejo resultados?</h4>
-              <p className="text-[#6B7068] text-sm font-light leading-relaxed pl-8">Os primeiros resultados de alívio e diminuição do inchaço costumam ser notados entre 2 a 4 semanas de uso contínuo diário. Para reconstrução da cartilagem, recomendamos pelo menos 3 meses.</p>
-            </div>
-            
-            <div className="bg-white p-8 rounded-3xl border border-[#EAE6DF] shadow-sm hover:shadow-md transition-shadow">
-              <h4 className="flex items-start gap-3 font-bold text-[#2C362B] mb-3 leading-tight"><HelpCircle className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" /> Tem alguma contraindicação?</h4>
-              <p className="text-[#6B7068] text-sm font-light leading-relaxed pl-8">Não! O Alivax é composto 100% por ingredientes naturais aprovados pela ANVISA, zero açúcares, zero glúten e zero lactose. Seguro para diabéticos e hipertensos.</p>
-            </div>
-            
-            <div className="bg-white p-8 rounded-3xl border border-[#EAE6DF] shadow-sm hover:shadow-md transition-shadow">
-              <h4 className="flex items-start gap-3 font-bold text-[#2C362B] mb-3 leading-tight"><HelpCircle className="w-5 h-5 text-[#D4A373] shrink-0 mt-0.5" /> Como devo usar?</h4>
-              <p className="text-[#6B7068] text-sm font-light leading-relaxed pl-8">O tratamento em gotas deve ser ingerido de forma sublingual (abaixo da língua) para absorção rápida. O número de gotas ou cápsulas vai estar no rótulo de acordo com o seu tratamento.</p>
-            </div>
+
           </div>
         </div>
       </section>
@@ -329,16 +268,25 @@ export default function AlivaxLP() {
       {/* Footer Minimalista de Segurança */}
       <footer className="py-12 px-4 text-center bg-white border-t border-[#EAE6DF]">
         <div className="max-w-3xl mx-auto">
-          <Lock className="w-8 h-8 text-[#D4A373] mx-auto mb-5 opacity-80" />
-          <h3 className="text-lg font-serif text-[#2C362B] mb-3">Compra 100% Segura</h3>
-          <p className="text-sm text-[#A9ACA6] font-light leading-relaxed mb-10 max-w-xl mx-auto">
-            Nós levamos a sua segurança a sério. Por isso, desenvolvemos o sistema de <strong>Pagamento na Entrega</strong>. Você não precisa expor seus dados bancários ou números de cartão de crédito na internet. Faça seu pedido em menos de 1 minuto, receba no conforto do seu lar e pague diretamente ao entregador. Risco zero para você.
+          <Lock className="w-8 h-8 text-[#0F172A] mx-auto mb-5 opacity-80" />
+          <h3 className="text-lg font-serif text-[#0F172A] mb-3">Compra 100% Segura</h3>
+          <p className="text-base text-[#A9ACA6] font-light leading-relaxed mb-10 max-w-xl mx-auto">
+            Sua compra é 100% segura com o <strong>Pagamento na Entrega</strong>. Faça o pedido online sem expor dados bancários e pague apenas ao entregador. Risco zero.
           </p>
           <div className="text-[10px] text-[#A9ACA6] uppercase tracking-widest border-t border-[#EAE6DF] pt-8 font-medium">
-            © {new Date().getFullYear()} Alivax - Movimento Sem Dor. Todos os direitos reservados.
+            © {new Date().getFullYear()} Alivax - Saúde Articular. Todos os direitos reservados.
           </div>
         </div>
       </footer>
+
+      {/* Botão Flutuante Fixo na Base */}
+      <div className="fixed bottom-0 left-0 right-0 z-40 bg-white/90 backdrop-blur-md border-t border-[#EAE6DF] p-3 md:p-4 shadow-[0_-10px_30px_rgba(0,0,0,0.1)] flex justify-center items-center">
+        <a href="#oferta" className="w-full max-w-lg group relative inline-flex items-center justify-center gap-2 bg-[#EA580C] text-white px-6 py-3.5 md:py-4 rounded-full font-bold overflow-hidden transition-all hover:scale-[1.02] shadow-[0_10px_20px_rgba(234,88,12,0.3)]">
+          <span className="relative z-10 flex items-center gap-2 tracking-widest uppercase text-[15px] font-black text-center">
+            ACABAR COM AS DORES AGORA
+          </span>
+        </a>
+      </div>
     </div>
   );
 }
