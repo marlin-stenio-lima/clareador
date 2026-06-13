@@ -221,6 +221,7 @@ export default function AlivaxLP() {
             {/* Kit 1 Unidade */}
             <div className="w-full lg:w-[340px] bg-white rounded-[2rem] border border-[#EAE6DF] shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-500 overflow-hidden flex flex-col group relative">
               <div className="p-8 flex-1 flex flex-col relative z-10">
+                <img src="/alivax-kit-1.jpg" alt="Kit 1 Frasco" className="w-full h-48 object-cover rounded-2xl mb-6 shadow-sm border border-[#EAE6DF] group-hover:scale-105 transition-transform duration-500" />
                 <div className="text-center mb-6">
                   <h3 className="font-serif text-3xl text-[#064E3B] mb-1">1 Frasco</h3>
                   <p className="text-[#8B8D88] text-[10px] font-bold uppercase tracking-[0.2em]">Tratamento Inicial</p>
@@ -250,7 +251,8 @@ export default function AlivaxLP() {
               <div className="absolute top-0 left-0 right-0 bg-[#15803D] text-white text-center py-2.5 font-black text-[10px] uppercase tracking-[0.2em] z-30">
                 ⭐ Oferta Especial: Compre 1, Leve 2
               </div>
-              <div className="p-8 pt-12 flex-1 flex flex-col relative z-20">
+              <div className="p-8 pt-16 flex-1 flex flex-col relative z-20">
+                <img src="/alivax-kit-2.jpg" alt="Kit 2 Frascos" className="w-full h-56 object-cover rounded-2xl mb-6 shadow-[0_10px_30px_rgba(21,128,61,0.2)] border-2 border-[#15803D]/20 group-hover:scale-105 transition-transform duration-500" />
                 <div className="text-center mb-6">
                   <h3 className="font-serif text-4xl text-[#064E3B] mb-1">2 Frascos</h3>
                   <p className="text-[#15803D] text-[10px] font-bold uppercase tracking-[0.2em]">Ideal para 2 Meses</p>
@@ -279,6 +281,7 @@ export default function AlivaxLP() {
             {/* Kit 3 Unidades */}
             <div className="w-full lg:w-[340px] bg-[#064E3B] rounded-[2rem] border border-[#065F46] shadow-[0_8px_30px_rgb(0,0,0,0.2)] hover:shadow-[0_20px_40px_rgb(15,23,42,0.4)] transition-all duration-500 overflow-hidden flex flex-col group relative">
               <div className="p-8 flex-1 flex flex-col relative z-10">
+                <img src="/alivax-kit-3.jpg" alt="Kit 3 Frascos" className="w-full h-48 object-cover rounded-2xl mb-6 shadow-sm border border-[#065F46] group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100" />
                 <div className="text-center mb-6">
                   <h3 className="font-serif text-3xl text-white mb-1">3 Frascos</h3>
                   <p className="text-[#15803D] text-[10px] font-bold uppercase tracking-[0.2em]">Tratamento Completo</p>
