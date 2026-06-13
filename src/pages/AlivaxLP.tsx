@@ -333,7 +333,7 @@ export default function AlivaxLP() {
 
       {/* Botão WhatsApp Flutuante */}
       <a 
-        href={`https://wa.me/5511999999999?text=${encodeURIComponent('quero tirar duvidas e garantir o meu Alivax')}`}
+        href={`https://wa.me/5586995485600?text=${encodeURIComponent('quero tirar duvidas e garantir o meu Alivax')}`}
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-24 right-4 md:bottom-28 md:right-8 z-50 bg-[#25D366] text-white p-3.5 md:p-4 rounded-full shadow-[0_10px_30px_rgba(37,211,102,0.4)] hover:scale-110 hover:bg-[#22bf5b] transition-all duration-300 flex items-center justify-center group"
