@@ -232,6 +232,7 @@ export default function AlivaxLP() {
                 <ul className="space-y-3 mb-8 pt-4 flex-1">
                   <li className="flex items-center gap-3 text-[15px] text-[#4A4C48] bg-[#FDFBF7] p-3 rounded-xl border border-[#EAE6DF]/80"><CheckCircle2 className="w-5 h-5 text-[#15803D] shrink-0" /> <span><strong className="text-[#064E3B]">Alívio</strong> nas primeiras semanas</span></li>
                   <li className="flex items-center gap-3 text-[15px] text-[#4A4C48] bg-[#FDFBF7] p-3 rounded-xl border border-[#EAE6DF]/80"><CheckCircle2 className="w-5 h-5 text-[#15803D] shrink-0" /> <span>Rende <strong className="text-[#064E3B]">1 Mês</strong> de uso</span></li>
+                  <li className="flex items-center gap-3 text-[15px] bg-amber-50 p-3 rounded-xl border border-amber-200 text-amber-800"><div className="w-5 h-5 rounded-full bg-amber-500 text-white flex items-center justify-center shrink-0 text-xs font-bold">!</div> <span className="font-black">Frete Grátis</span> para sua região</li>
                 </ul>
                 <div className="w-full flex flex-col items-center">
                   <a href={link1Unidade} onClick={() => handleInitiateCheckout('1 Unidade Alivax', 129.90)} className="w-full flex items-center justify-center gap-2 bg-[#15803D] hover:bg-[#c24102] text-white py-5 rounded-2xl font-black tracking-widest uppercase text-[15px] transition-all shadow-md group">
